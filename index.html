@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat Bot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ASK Tirth <span>AI Assistant</span></h1>
+            <div class="header-buttons">
+                <button id="dark-mode-toggle"><i class="fas fa-moon"></i></button>
+                <button id="login-button"><i class="fas fa-sign-in-alt"></i></button>
+            </div>
+        </header>
+        
+        <div class="main-content">
+            <div id="history-container">
+                <h2>History</h2>
+                <ul id="history-list">
+                    <!-- History items will be added here -->
+                </ul>
+            </div>
+            <div class="chat-wrapper">
+                <div class="chat-container" id="chat-container">
+                    <!-- Chat messages will be displayed here -->
+                </div>
+                <div class="prompt-area">
+                    <input type="text" id="user-input" placeholder="Type your message here...">
+                    <button id="send-button"><i class="fas fa-paper-plane"></i></button>
+                    <button id="clear-button"><i class="fas fa-trash"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
